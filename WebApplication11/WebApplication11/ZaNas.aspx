@@ -1,10 +1,10 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Home.aspx.cs" Inherits="WebApplication11.Home" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="ZaNas.aspx.cs" Inherits="WebApplication11.ZaNas" %>
 
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title>Second Hand Shop - Home Page</title>
+    <title>Second Hand Shop - About us</title>
 </head>
 <body>
 
@@ -22,7 +22,7 @@
                 <div class="col-md-8">
                     <h1 style="text-align:center; color:indianred; padding-top:50px;">Second Hand Shop
                         <br />
-                        Best quality shop!
+                        Everything you need to know about us!!
                         <br />
                     </h1>
                 </div>
@@ -40,20 +40,34 @@
         <div class="fixed_maxwidth">
             <div class="col-md-8">
                 <p style="text-align:left; color:indianred; padding-top:10px;">Welcome to your favorite Second Hand Shop</p>
-                <p style="text-align:left; color:indianred; padding-top:10px;"> We have prepared many beautiful clothes for you.
-                    But before you start searching for your favorite peace of clothes you must know that these clothes are unique second hand clothes, but not worn!!
+                <p style="text-align:left; color:indianred; padding-top:10px;"> but this shop is not an ordinary shop!
+                this is a unique way to shop preloved items online .Yes, we do have clothes from brands but we do not sell them full price. 
+                The reason for this is, we want everybody to wear clothes they dream of. 
+                So some of you will see that all the products are last season , or maybe even season before that, but that doesn't mean that those products are not fine, 
+                just that some of us do not have the time or money to buy them in season. We cannot throw everthing that is not modern in the moment.
+                We have to think about the environment.
+                    <br />
+                    <br />
+                    SO HERE WE ARE. WE ARE  UNIQUE , WE ARE STYLISH , WE HAVE SOMETHING FOR EVERYBODY - WITH  REASONABLE PRICES <br />
+                    ALL OF THIS PLUS SAVING THE ENVIRONMENT
+                </p>
+                <p style="text-align:left; color:indianred; padding-top:10px;"> &nbsp;</p>
+                 <p style="text-align:left; color:indianred; padding-top:10px;">
+                    Contact : 078/ 123-456 <br />
+                   
+                  &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; 032 / 123-456
+                     <br />
+                    <br />
+                    Email address : secondhandshopv@gmail.com
+
                 </p>
                 <p style="text-align:left; color:indianred; padding-top:10px;"> &nbsp;</p>
                 <p style="text-align:left; color:indianred; padding-top:10px;"> &nbsp;</p>
                 <p style="text-align:left; color:indianred; padding-top:10px;"> &nbsp;</p>
                 <p style="text-align:left; color:indianred; padding-top:10px;"> &nbsp;</p>
-                <p style="text-align:left; color:indianred; padding-top:10px;"> &nbsp;</p>
-                <p style="text-align:left; color:indianred; padding-top:10px;"> &nbsp;</p>
-                <p style="text-align:left; color:indianred; padding-top:10px;"> &nbsp;</p>
-                <p style="text-align:left; color:indianred; padding-top:10px;"> &nbsp;</p>       
+                 
             </div>
         </div>
-
 
         &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
         <asp:ImageButton runat="server" AlternateText="Home" ImageUrl="~/images/Home.png" PostBackUrl="~/Home.aspx" Width="97px"> </asp:ImageButton>
@@ -64,6 +78,7 @@
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
          <asp:ImageButton runat="server" AlternateText="ZaNas" ImageUrl="~/images/aboutus.png" PostBackUrl="~/ZaNas.aspx" Width="97px"> </asp:ImageButton>
         &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
-         </form>
+
+    </form>
 </body>
 </html>
