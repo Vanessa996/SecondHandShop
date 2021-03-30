@@ -9,6 +9,45 @@ insert into kategorijaa(id,ime) values
 (3,'Male-Adults'),
 (4,'Male-Kids');
 
+create table kategorija2(
+id integer primary key,
+ime2 varchar(50)
+);
+insert into kategorija2(id,ime2) values
+(1,'Adults'),
+(2,'Kids');
+
+select * from kategorija2;
+
+create table uploadss(
+id_image integer primary key,
+content varchar(100),
+cena integer,
+id_kat integer,
+constraint fk_products_to_kategorija2 foreign key (id_kat) references kategorija2(id)
+);
+
+insert into uploadss(id_image,content,cena,id_kat) values
+(1, 'images\uploads\women1.jpg', 750, 1),
+(2, 'images\uploads\women2.jpg', 650, 1),
+(3, 'images\uploads\women3.jpg', 950, 1),
+(4, 'images\uploads\women4.jpg', 550, 1),
+(5, 'images\uploads\man1.jpg', 650, 1),
+(6, 'images\uploads\man2.jpg', 750, 1),
+(7, 'images\uploads\man3.jpg', 670, 1),
+(8, 'images\uploads\man4.jpg', 450, 1),
+(9, 'images\uploads\man5.jpg', 760, 1),
+(10, 'images\uploads\girl1.jpg', 550, 2),
+(11, 'images\uploads\girl2.jpg', 450, 2),
+(12, 'images\uploads\girl3.jpg', 650, 2),
+(13, 'images\uploads\boy1.jpg', 350, 2),
+(14, 'images\uploads\boy2.jpg', 350, 2),
+(15, 'images\uploads\boy3.jpg', 450, 2),
+(16, 'images\uploads\boy4.jpg', 650, 2),
+(17, 'images\uploads\boy5.jpg', 550, 2);
+
+select *from uploadss;
+
 
 
 
@@ -85,6 +124,29 @@ insert into products(id_image,content,cena,id_kat) values
 (59, 'images\clothes\kidm14.jpg', 200, 4),
 (60, 'images\clothes\kidm15.jpg', 250, 4)
 ;
+
+insert into products(id_image,content,cena,id_kat) values
+(61, 'images\clothes\adultf16.jpg', 250, 1),
+(62, 'images\clothes\adultf17.jpg', 250, 1),
+(63, 'images\clothes\adultf18.jpg', 270, 1),
+(64, 'images\clothes\adultf19.jpg', 330, 1),
+(65, 'images\clothes\adultf20.jpg', 340, 1),
+(66, 'images\clothes\kidf16.jpg', 200, 2),
+(67, 'images\clothes\kidf17.jpg', 250, 2),
+(68, 'images\clothes\kidf18.jpg', 280, 2),
+(69, 'images\clothes\kidf19.jpg', 300, 2),
+(70, 'images\clothes\kidf20.jpg', 250, 2),
+(71, 'images\clothes\adultm16.jpg', 350, 3),
+(72, 'images\clothes\adultm17.jpg', 350, 3),
+(73, 'images\clothes\adultm18.jpg', 350, 3),
+(74, 'images\clothes\adultm19.jpg', 450, 3),
+(75, 'images\clothes\adultm20.jpg', 450, 3),
+(76, 'images\clothes\kidm16.jpg', 250, 4),
+(77, 'images\clothes\kidm17.jpg', 290, 4),
+(78, 'images\clothes\kidm18.jpg', 270, 4),
+(79, 'images\clothes\kidm19.jpg', 200, 4),
+(80, 'images\clothes\kidm20.jpg', 350, 4);
+
 
 select *from products;
 

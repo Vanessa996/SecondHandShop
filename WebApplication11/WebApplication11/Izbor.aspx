@@ -16,6 +16,11 @@
     <style>
         .col-md-3, .col-md-9 .col-sm-12 {
             margin-top: 10px;
+            
+        }
+        .col-md-5{
+            text-align:right;
+            margin-top: 10px;
         }
         .auto-style1 {}
     </style>
@@ -61,7 +66,7 @@
                                      <br />
                                      price:
                                      <asp:Label ID="cenaLabel" runat="server" Text='<%# Eval("cena") %>' /> den
-                                     <asp:Button ID="Button1" runat="server" Text="Buy" PostBackUrl="~/Kosnicka.aspx" />
+                                     <asp:Button ID="Button1" runat="server" Text="Add to cart" PostBackUrl="~/Kosnicka.aspx" />
                                      
                                      <br />
                                  </td>
@@ -72,7 +77,7 @@
                                      <br />
                                      price:
                                      <asp:TextBox ID="cenaTextBox" runat="server" Text='<%# Bind("cena") %>' /> den
-                                        <asp:Button ID="Button1" runat="server" Text="Buy" PostBackUrl="~/Kosnicka.aspx" />
+                                        <asp:Button ID="Button1" runat="server" Text="Add to cart" PostBackUrl="~/Kosnicka.aspx" />
                                      <br />
                                      <asp:Button ID="UpdateButton" runat="server" CommandName="Update" Text="Update" />
                                      <br />
@@ -103,7 +108,7 @@
                                      <br />
                                      price:
                                      <asp:TextBox ID="cenaTextBox" runat="server" Text='<%# Bind("cena") %>' /> den
-                                        <asp:Button ID="Button1" runat="server" Text="Buy" PostBackUrl="~/Kosnicka.aspx" />
+                                        <asp:Button ID="Button1" runat="server" Text="Add to cart" PostBackUrl="~/Kosnicka.aspx" />
                                      <br />
                                      <asp:Button ID="InsertButton" runat="server" CommandName="Insert" Text="Insert" />
                                      <br />
@@ -118,7 +123,7 @@
                                      <br />
                                      price:
                                      <asp:Label ID="cenaLabel" runat="server" Text='<%# Eval("cena") %>' /> den
-                                        <asp:Button ID="Button1" runat="server" Text="Buy" PostBackUrl="~/Kosnicka.aspx" />
+                                        <asp:Button ID="Button1" runat="server" Text="Add to cart" PostBackUrl="~/Kosnicka.aspx" />
                                      <br />
                                  </td>
                              </ItemTemplate>
@@ -152,18 +157,24 @@
                                      <br />
                                      price:
                                      <asp:Label ID="cenaLabel" runat="server" Text='<%# Eval("cena") %>' /> den
-                                        <asp:Button ID="Button1" runat="server" Text="Buy" PostBackUrl="~/Kosnicka.aspx" />
+                                        <asp:Button ID="Button1" runat="server" Text="Add to cart" PostBackUrl="~/Kosnicka.aspx" />
                                      <br />
                                  </td>
                              </SelectedItemTemplate>
                 
                          </asp:ListView>
-
+                          
                          <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:masterConnectionString %>" SelectCommand="SELECT [content], [cena] FROM [products] WHERE ([id_kat] = @id_kat)">
                              <SelectParameters>
                                  <asp:SessionParameter DefaultValue="1" Name="id_kat" SessionField="category" Type="Int32" />
                              </SelectParameters>
                          </asp:SqlDataSource>
+                         <br /> 
+                         <br />
+                         <br />
+                         <td colspan="2" style="text-align:right">
+                         <asp:ImageButton ID="ImageButton1" runat="server" Height="180px" ImageAlign="middle" ImageUrl="~/images/fromCtoCustomers.jpg" Width="180px" PostBackUrl="~/FromCustomersToCustomers.aspx"  CssClass="col-md-5"/>
+                              </td>
 
         </p>
         <p style="text-align:left;color:indianred;padding-top:10 px;"></p>

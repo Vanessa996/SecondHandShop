@@ -210,7 +210,9 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="FromCustomersToCustomers.aspx" />
     <Content Include="images\aboutus.png" />
+    <Content Include="images\fromCtoCustomers.jpg" />
     <Content Include="ZaNas.aspx" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Home.aspx" />
@@ -401,6 +403,13 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
+    <Compile Include="FromCustomersToCustomers.aspx.cs">
+      <DependentUpon>FromCustomersToCustomers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FromCustomersToCustomers.aspx.designer.cs">
+      <DependentUpon>FromCustomersToCustomers.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -460,6 +469,7 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="images\clothes\" />
+    <Folder Include="Uploads\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
